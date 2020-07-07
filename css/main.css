@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #1B1725;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -25,12 +25,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #1B1725;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #1B1725;
     text-shadow: none;
 }
 
@@ -42,7 +42,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #A499B3;
     margin: 1em 0;
     padding: 0;
 }
@@ -97,50 +97,88 @@ textarea {
 
 
 html {
-  background-color: #004B52;
+  background-color: #1B1725;
   height: 100%;
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.div-1, .div-2, .div-3 {
+header,
+footer {
+  background-color: #1B1725;
+  width: 100%;
+  color: #D0BCD5;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+main {
+     width: 100%;
+     border-bottom: 1px #A499B3 solid;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+header h1 {
+     font-family: 'Abril Fatface', cursive;
+     font-size: 4em;
+     line-height: .5em;
+     text-align: left;
+}
+
+main {
+  background-color: #1B1725;
+  height: 250px;
+  width: 100%;
+  color: #fff;
+  font-size: 1em;
+}
+
+main span {
+     font-family: 'Abril Fatface', cursive;
+     font-size: 1em;
+     display: inline;
+}
+
+.flex-item {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  font-weight: 900;
-  font-style: italic;
-  text-align: center;
-  background-color: #004B52;
-  height: 300px;
+  background-color: #1B1725;
+  height: 200px;
   width: 30%;
-  padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px #fff solid;
-  border-right: 1px #fff solid;
 }
 
 span {
-     font-weight: 400;
-     font-style: normal;
+     font-family: 'Abril Fatface', cursive;
      font-size: .75em;
 }
 
-
+footer {
+     border-top: 1px #A499B3 solid;
+     font-size: .75em;
+     padding-top: 1em;
+}
 
 
 /* ==========================================================================
